@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script type="text/javascript" src="contact.js"></script>
+</head>
+<body>
+    <h1>CONTACT</h1>
+    <table>
+        <tr>
+            <td>
+                <form id="frmContact" action="https://formspree.io/f/xlezelyp" method="post">
+                    <div>
+                        <label>Full Name<span>*</span></label>
+                        <input type="text" name="fullName" id="fullName"><label class="validation-error hide" id="fullNameError"></label>
+                    </div>
+                    <div>
+                        <label>Email<span>*</span></label>
+                        <input type="text" name="Email" id="Email"><label class="validation-error hide" id="EmailError"></label>
+                    </div>
+                    <div>
+                        <label>Address<span>*</span></label>
+                        <input type="text" name="Address" id="Address"><label class="validation-error hide" id="AddressError"></label>
+                    </div>
+                    <div>
+                        <label>City<span>*</span></label>
+                        <input type="text" name="City" id="City"><label class="validation-error hide" id="CityError"></label>
+                    </div>
+                    <div>
+                        <label>PostalCode<span>*</span></label>
+                        <input type="text" name="PostalCode" id="PostalCode"><label class="validation-error hide" id="PostalCodeError"></label>
+                    </div>
+                </form>
+                    <br>
+                    <div class="form-action-buttons">
+                        <input type="button" value="Submit" onclick="onFormSubmit()">
+                    </div><br>
+                <form>
+                    <p>Please select any of the following:</p>
+                    <input type="radio" id="Question" name="any"value="Question" onclick="popTextarea()">
+                    <label for="Question">Question</label><br>
+                    <input type="radio" id="Comment" name="any"value="Comment" onclick="popTextarea()">
+                    <label for="Comment">Comment</label><br>
+                    <input type="radio" id="Hiring" name="any" value="Hiring" onclick="popTextbox()">
+                    <label for="Hiring">Hiring</label><br><br>
+                </form>
+              <textarea id="txtarea" hidden></textarea>
+              <input id="txtHiring" type="text" placeholder="Enter hourly rate" hidden/>
+            </td>
+    </table>
+    </div>
+    <button type="button" onclick="resume.html"><a href="resume.html">RESUME</a> </button>
+    <button type="button2" onclick="main.html"><a href="index.html">HOME</a></button>
+</body>
+</html>
